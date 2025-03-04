@@ -4,4 +4,4 @@ decision_graph
 .. toctree::
    :maxdepth: 4
 
-   decision_graph
+   decision_tree
