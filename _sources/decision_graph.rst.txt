@@ -1,0 +1,18 @@
+decision\_graph package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   decision_graph.decision_tree
+
+Module contents
+---------------
+
+.. automodule:: decision_graph
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,23 +1,23 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../../">
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>decision_tree.abc &mdash; PyDecisionGraph 0.1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+  <title>decision_graph.decision_tree.abc &mdash; PyDecisionGraph 0.1.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
   
-      <script src="../../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=01f34227"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=a58bc63e"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -28,11 +28,11 @@
 
           
           
-          <a href="../../index.html" class="icon icon-home">
+          <a href="../../../index.html" class="icon icon-home">
             PyDecisionGraph
           </a>
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -41,10 +41,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../setup.html">Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../apis.html">APIs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../gallery.html">Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../apis.html">APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gallery.html">Gallery</a></li>
 </ul>
 
         </div>
@@ -53,17 +53,16 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">PyDecisionGraph</a>
+          <a href="../../../index.html">PyDecisionGraph</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
-          <li class="breadcrumb-item"><a href="../decision_tree.html">decision_tree</a></li>
-      <li class="breadcrumb-item active">decision_tree.abc</li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">decision_graph.decision_tree.abc</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -72,7 +71,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for decision_tree.abc</h1><div class="highlight"><pre>
+  <h1>Source code for decision_graph.decision_tree.abc</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">inspect</span>
@@ -260,7 +259,7 @@
 
 
 <div class="viewcode-block" id="LogicGroup">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicGroup">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicGroup">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LogicGroup</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="n">metaclass</span><span class="o">=</span><span class="n">LogicGroupMeta</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    A minimal context manager to save/restore state from the `.contexts` dict.</span>
@@ -270,7 +269,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="LogicGroup.__init__">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicGroup.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicGroup.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">parent</span><span class="p">:</span> <span class="n">Self</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">contexts</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span>
@@ -312,7 +311,7 @@
         <span class="k">return</span> <span class="kc">False</span>
 
 <div class="viewcode-block" id="LogicGroup.break_">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicGroup.break_">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicGroup.break_">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">break_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scope</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">scope</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">scope</span> <span class="o">=</span> <span class="bp">self</span>
@@ -379,7 +378,7 @@
 
 
 <div class="viewcode-block" id="SkipContextsBlock">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.SkipContextsBlock">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.SkipContextsBlock">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">SkipContextsBlock</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">class</span><span class="w"> </span><span class="nc">_Skip</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
         <span class="k">pass</span>
@@ -426,7 +425,7 @@
         <span class="k">pass</span>
 
 <div class="viewcode-block" id="SkipContextsBlock.get_trace">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.SkipContextsBlock.get_trace">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.SkipContextsBlock.get_trace">[docs]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">get_trace</span><span class="p">():</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -447,14 +446,14 @@
 
 
 <div class="viewcode-block" id="SkipContextsBlock.empty_trace">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.SkipContextsBlock.empty_trace">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.SkipContextsBlock.empty_trace">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">empty_trace</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">pass</span></div>
 
 
 <div class="viewcode-block" id="SkipContextsBlock.err_trace">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.SkipContextsBlock.err_trace">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.SkipContextsBlock.err_trace">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">err_trace</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">frame</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">arg</span><span class="p">):</span>
         <span class="k">raise</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_Skip</span><span class="p">(</span><span class="s2">&quot;Expression evaluated to be False, cannot enter the block.&quot;</span><span class="p">)</span></div>
@@ -463,14 +462,14 @@
 
 
 <div class="viewcode-block" id="LogicExpression">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LogicExpression</span><span class="p">(</span><span class="n">SkipContextsBlock</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Represents a logical or mathematical expression that supports deferred evaluation.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="LogicExpression.__init__">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span>
             <span class="n">expression</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="ne">Exception</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[],</span> <span class="n">Any</span><span class="p">],</span>
@@ -496,7 +495,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
 
 <div class="viewcode-block" id="LogicExpression.eval">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicExpression.eval">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicExpression.eval">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enforce_dtype</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Evaluate the expression.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">expression</span><span class="p">,</span> <span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">bool</span><span class="p">,</span> <span class="nb">str</span><span class="p">)):</span>
@@ -520,7 +519,7 @@
 
     <span class="c1"># Logical operators</span>
 <div class="viewcode-block" id="LogicExpression.cast">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicExpression.cast">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicExpression.cast">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cast</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="ne">Exception</span> <span class="o">|</span> <span class="n">Self</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -650,10 +649,10 @@
 
 
 <div class="viewcode-block" id="ExpressionCollection">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ExpressionCollection">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ExpressionCollection">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ExpressionCollection</span><span class="p">(</span><span class="n">LogicGroup</span><span class="p">):</span>
 <div class="viewcode-block" id="ExpressionCollection.__init__">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ExpressionCollection.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ExpressionCollection.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">if</span> <span class="s1">&#39;logic_group&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
             <span class="n">logic_group</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logic_group&quot;</span><span class="p">)</span>
@@ -671,10 +670,10 @@
 
 
 <div class="viewcode-block" id="LogicNode">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LogicNode</span><span class="p">(</span><span class="n">LogicExpression</span><span class="p">):</span>
 <div class="viewcode-block" id="LogicNode.__init__">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span>
             <span class="n">expression</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="ne">Exception</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[],</span> <span class="n">Any</span><span class="p">],</span>
@@ -788,7 +787,7 @@
         <span class="n">LGM</span><span class="o">.</span><span class="n">exit_expression</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
 
 <div class="viewcode-block" id="LogicNode.fill_binary_branch">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.fill_binary_branch">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.fill_binary_branch">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">fill_binary_branch</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">with_action</span><span class="p">:</span> <span class="n">ActionNode</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -819,7 +818,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.traverse">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.traverse">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.traverse">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">traverse</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">node</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">G</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">node_map</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Self</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">parent</span><span class="p">:</span> <span class="n">Self</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
@@ -857,7 +856,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.append">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.append">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.append">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">:</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Adds a child node to the current node.</span>
@@ -884,7 +883,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.pop">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.pop">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.pop">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">pop</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">LogicNode</span><span class="p">]:</span>
         <span class="n">edge</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">edges</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
         <span class="n">node</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">edge</span><span class="p">)</span>
@@ -892,7 +891,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.replace">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.replace">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.replace">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">replace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">original_node</span><span class="p">:</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">new_node</span><span class="p">:</span> <span class="n">LogicNode</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">condition</span><span class="p">,</span> <span class="n">node</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="n">original_node</span><span class="p">:</span>
@@ -904,7 +903,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.eval_recursively">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.eval_recursively">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.eval_recursively">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval_recursively</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Recursively evaluates the decision tree starting from this node.</span>
@@ -944,7 +943,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.list_labels">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.list_labels">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.list_labels">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">list_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="n">LogicNode</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Lists all logic groups in the tree and returns a dictionary mapping group names to nodes.</span>
@@ -964,7 +963,7 @@
 
 
 <div class="viewcode-block" id="LogicNode.select_node">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.select_node">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.select_node">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">select_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LogicNode</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Selects the root node of a logic group and validates that the group is chained.</span>
@@ -986,8 +985,8 @@
 
 
 <div class="viewcode-block" id="LogicNode.to_html">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.LogicNode.to_html">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">to_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">with_group</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dry_run</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;decision_tree.html&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.LogicNode.to_html">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">to_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">with_group</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dry_run</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;decision_graph.html&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Visualizes the decision tree using PyVis.</span>
 <span class="sd">        If dry_run=True, shows structure without highlighting active path.</span>
@@ -1243,10 +1242,10 @@
 
 
 <div class="viewcode-block" id="ActionNode">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ActionNode">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ActionNode">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ActionNode</span><span class="p">(</span><span class="n">LogicNode</span><span class="p">):</span>
 <div class="viewcode-block" id="ActionNode.__init__">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ActionNode.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ActionNode.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span>
             <span class="n">action</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">|</span> <span class="ne">Exception</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[],</span> <span class="n">Any</span><span class="p">],</span>
@@ -1276,7 +1275,7 @@
         <span class="k">pass</span>
 
 <div class="viewcode-block" id="ActionNode.eval_recursively">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ActionNode.eval_recursively">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ActionNode.eval_recursively">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval_recursively</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Evaluates the decision tree from this node based on the given state.</span>
@@ -1299,7 +1298,7 @@
 
 
 <div class="viewcode-block" id="ActionNode.append">
-<a class="viewcode-back" href="../../decision_tree.html#decision_tree.abc.ActionNode.append">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.abc.ActionNode.append">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="k">raise</span> <span class="n">TooManyChildren</span><span class="p">(</span><span class="s2">&quot;Cannot append child to an ActionNode!&quot;</span><span class="p">)</span></div>
 </div>

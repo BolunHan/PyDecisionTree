@@ -6,20 +6,20 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>decision_tree &mdash; PyDecisionGraph 0.1.0 documentation</title>
+  <title>decision_graph &mdash; PyDecisionGraph 0.1.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/documentation_options.js?v=a58bc63e"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="decision_tree package" href="decision_tree.html" />
+    <link rel="next" title="decision_graph package" href="decision_graph.html" />
     <link rel="prev" title="APIs" href="apis.html" /> 
 </head>
 
@@ -47,8 +47,8 @@
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="apis.html">APIs</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">decision_tree</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html">decision_tree package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">decision_graph</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="decision_graph.html">decision_graph package</a></li>
 </ul>
 </li>
 </ul>
@@ -71,7 +71,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="apis.html">APIs</a></li>
-      <li class="breadcrumb-item active">decision_tree</li>
+      <li class="breadcrumb-item active">decision_graph</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -81,244 +81,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="decision-tree">
-<h1>decision_tree<a class="headerlink" href="#decision-tree" title="Link to this heading"></a></h1>
+  <section id="decision-graph">
+<h1>decision_graph<a class="headerlink" href="#decision-graph" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="decision_tree.html">decision_tree package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.abc">decision_tree.abc module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicGroup"><code class="docutils literal notranslate"><span class="pre">LogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">LogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicGroup.break_"><code class="docutils literal notranslate"><span class="pre">LogicGroup.break_()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicGroup.sub_logics"><code class="docutils literal notranslate"><span class="pre">LogicGroup.sub_logics</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.SkipContextsBlock"><code class="docutils literal notranslate"><span class="pre">SkipContextsBlock</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.SkipContextsBlock.get_trace"><code class="docutils literal notranslate"><span class="pre">SkipContextsBlock.get_trace()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.SkipContextsBlock.empty_trace"><code class="docutils literal notranslate"><span class="pre">SkipContextsBlock.empty_trace()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.SkipContextsBlock.err_trace"><code class="docutils literal notranslate"><span class="pre">SkipContextsBlock.err_trace()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicExpression"><code class="docutils literal notranslate"><span class="pre">LogicExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicExpression.__init__"><code class="docutils literal notranslate"><span class="pre">LogicExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicExpression.eval"><code class="docutils literal notranslate"><span class="pre">LogicExpression.eval()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicExpression.cast"><code class="docutils literal notranslate"><span class="pre">LogicExpression.cast()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ExpressionCollection"><code class="docutils literal notranslate"><span class="pre">ExpressionCollection</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ExpressionCollection.__init__"><code class="docutils literal notranslate"><span class="pre">ExpressionCollection.__init__()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode"><code class="docutils literal notranslate"><span class="pre">LogicNode</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.__init__"><code class="docutils literal notranslate"><span class="pre">LogicNode.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.fill_binary_branch"><code class="docutils literal notranslate"><span class="pre">LogicNode.fill_binary_branch()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.traverse"><code class="docutils literal notranslate"><span class="pre">LogicNode.traverse()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.append"><code class="docutils literal notranslate"><span class="pre">LogicNode.append()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.pop"><code class="docutils literal notranslate"><span class="pre">LogicNode.pop()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.replace"><code class="docutils literal notranslate"><span class="pre">LogicNode.replace()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.eval_recursively"><code class="docutils literal notranslate"><span class="pre">LogicNode.eval_recursively()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.list_labels"><code class="docutils literal notranslate"><span class="pre">LogicNode.list_labels()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.select_node"><code class="docutils literal notranslate"><span class="pre">LogicNode.select_node()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.to_html"><code class="docutils literal notranslate"><span class="pre">LogicNode.to_html()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.children"><code class="docutils literal notranslate"><span class="pre">LogicNode.children</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.leaves"><code class="docutils literal notranslate"><span class="pre">LogicNode.leaves</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.last_edge"><code class="docutils literal notranslate"><span class="pre">LogicNode.last_edge</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.last_node"><code class="docutils literal notranslate"><span class="pre">LogicNode.last_node</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.last_leaf"><code class="docutils literal notranslate"><span class="pre">LogicNode.last_leaf</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.LogicNode.last_leaf_expression"><code class="docutils literal notranslate"><span class="pre">LogicNode.last_leaf_expression</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ActionNode"><code class="docutils literal notranslate"><span class="pre">ActionNode</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ActionNode.__init__"><code class="docutils literal notranslate"><span class="pre">ActionNode.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ActionNode.eval_recursively"><code class="docutils literal notranslate"><span class="pre">ActionNode.eval_recursively()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.abc.ActionNode.append"><code class="docutils literal notranslate"><span class="pre">ActionNode.append()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="decision_graph.html">decision_graph package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="decision_graph.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="decision_graph.decision_tree.html">decision_graph.decision_tree package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.abc">decision_graph.decision_tree.abc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.collection">decision_graph.decision_tree.collection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.exc">decision_graph.decision_tree.exc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.expression">decision_graph.decision_tree.expression module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.logic_group">decision_graph.decision_tree.logic_group module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree.node">decision_graph.decision_tree.node module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="decision_graph.decision_tree.html#module-decision_graph.decision_tree">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.collection">decision_tree.collection module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping"><code class="docutils literal notranslate"><span class="pre">LogicMapping</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping.AttrExpression"><code class="docutils literal notranslate"><span class="pre">LogicMapping.AttrExpression</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping.__init__"><code class="docutils literal notranslate"><span class="pre">LogicMapping.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping.reset"><code class="docutils literal notranslate"><span class="pre">LogicMapping.reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping.update"><code class="docutils literal notranslate"><span class="pre">LogicMapping.update()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicMapping.clear"><code class="docutils literal notranslate"><span class="pre">LogicMapping.clear()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator"><code class="docutils literal notranslate"><span class="pre">LogicGenerator</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator.AttrExpression"><code class="docutils literal notranslate"><span class="pre">LogicGenerator.AttrExpression</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator.__init__"><code class="docutils literal notranslate"><span class="pre">LogicGenerator.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator.append"><code class="docutils literal notranslate"><span class="pre">LogicGenerator.append()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator.remove"><code class="docutils literal notranslate"><span class="pre">LogicGenerator.remove()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.collection.LogicGenerator.clear"><code class="docutils literal notranslate"><span class="pre">LogicGenerator.clear()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.exc">decision_tree.exc module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.NodeError"><code class="docutils literal notranslate"><span class="pre">NodeError</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.TooManyChildren"><code class="docutils literal notranslate"><span class="pre">TooManyChildren</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.TooFewChildren"><code class="docutils literal notranslate"><span class="pre">TooFewChildren</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.NodeNotFountError"><code class="docutils literal notranslate"><span class="pre">NodeNotFountError</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.NodeValueError"><code class="docutils literal notranslate"><span class="pre">NodeValueError</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.EdgeValueError"><code class="docutils literal notranslate"><span class="pre">EdgeValueError</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.ResolutionError"><code class="docutils literal notranslate"><span class="pre">ResolutionError</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.ExpressFalse"><code class="docutils literal notranslate"><span class="pre">ExpressFalse</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.exc.ContextsNotFound"><code class="docutils literal notranslate"><span class="pre">ContextsNotFound</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.expression">decision_tree.expression module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.__init__"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.to_json"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.to_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.from_json"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.from_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.dtype_to_str"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.dtype_to_str()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.str_to_dtype"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.str_to_dtype()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.safe_alias"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.safe_alias()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.safe_dump"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.safe_dump()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.safe_load"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.safe_load()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ContextLogicExpression.safe_eval"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.safe_eval()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.expression.AttrExpression"><code class="docutils literal notranslate"><span class="pre">AttrExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.AttrExpression.__init__"><code class="docutils literal notranslate"><span class="pre">AttrExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.AttrExpression.to_json"><code class="docutils literal notranslate"><span class="pre">AttrExpression.to_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.AttrExpression.from_json"><code class="docutils literal notranslate"><span class="pre">AttrExpression.from_json()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.expression.MathExpression"><code class="docutils literal notranslate"><span class="pre">MathExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.MathExpression.Operator"><code class="docutils literal notranslate"><span class="pre">MathExpression.Operator</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.MathExpression.__init__"><code class="docutils literal notranslate"><span class="pre">MathExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.MathExpression.to_json"><code class="docutils literal notranslate"><span class="pre">MathExpression.to_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.MathExpression.from_json"><code class="docutils literal notranslate"><span class="pre">MathExpression.from_json()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ComparisonExpression"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ComparisonExpression.Operator"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression.Operator</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ComparisonExpression.__init__"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ComparisonExpression.to_json"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression.to_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.ComparisonExpression.from_json"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression.from_json()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.expression.LogicalExpression"><code class="docutils literal notranslate"><span class="pre">LogicalExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.LogicalExpression.Operator"><code class="docutils literal notranslate"><span class="pre">LogicalExpression.Operator</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.LogicalExpression.__init__"><code class="docutils literal notranslate"><span class="pre">LogicalExpression.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.LogicalExpression.to_json"><code class="docutils literal notranslate"><span class="pre">LogicalExpression.to_json()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.expression.LogicalExpression.from_json"><code class="docutils literal notranslate"><span class="pre">LogicalExpression.from_json()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.logic_group">decision_tree.logic_group module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.SignalLogicGroup"><code class="docutils literal notranslate"><span class="pre">SignalLogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.SignalLogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">SignalLogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.SignalLogicGroup.get"><code class="docutils literal notranslate"><span class="pre">SignalLogicGroup.get()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.SignalLogicGroup.reset"><code class="docutils literal notranslate"><span class="pre">SignalLogicGroup.reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.SignalLogicGroup.signal"><code class="docutils literal notranslate"><span class="pre">SignalLogicGroup.signal</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.InstantConfirmationLogicGroup"><code class="docutils literal notranslate"><span class="pre">InstantConfirmationLogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.InstantConfirmationLogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">InstantConfirmationLogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.InstantConfirmationLogicGroup.reset"><code class="docutils literal notranslate"><span class="pre">InstantConfirmationLogicGroup.reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.InstantConfirmationLogicGroup.confirm"><code class="docutils literal notranslate"><span class="pre">InstantConfirmationLogicGroup.confirm()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.InstantConfirmationLogicGroup.signal"><code class="docutils literal notranslate"><span class="pre">InstantConfirmationLogicGroup.signal</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RequestAction"><code class="docutils literal notranslate"><span class="pre">RequestAction</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RequestAction.open"><code class="docutils literal notranslate"><span class="pre">RequestAction.open</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RequestAction.unwind"><code class="docutils literal notranslate"><span class="pre">RequestAction.unwind</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RequestAction.idle"><code class="docutils literal notranslate"><span class="pre">RequestAction.idle</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest"><code class="docutils literal notranslate"><span class="pre">PendingRequest</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.Skip"><code class="docutils literal notranslate"><span class="pre">PendingRequest.Skip</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.__init__"><code class="docutils literal notranslate"><span class="pre">PendingRequest.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.empty"><code class="docutils literal notranslate"><span class="pre">PendingRequest.empty()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.name"><code class="docutils literal notranslate"><span class="pre">PendingRequest.name</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.timestamp"><code class="docutils literal notranslate"><span class="pre">PendingRequest.timestamp</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.sig"><code class="docutils literal notranslate"><span class="pre">PendingRequest.sig</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.timeout"><code class="docutils literal notranslate"><span class="pre">PendingRequest.timeout</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.action"><code class="docutils literal notranslate"><span class="pre">PendingRequest.action</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.PendingRequest.uid"><code class="docutils literal notranslate"><span class="pre">PendingRequest.uid</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.register"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.register()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.confirm"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.confirm()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.deny"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.deny()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.reset"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.reset()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.action"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.action</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.pending_request"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.pending_request</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.DelayedConfirmationLogicGroup.signal"><code class="docutils literal notranslate"><span class="pre">DelayedConfirmationLogicGroup.signal</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup.register"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup.register()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup.confirm"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup.confirm()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup.deny"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup.deny()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.RacingConfirmationLogicGroup.pending_request"><code class="docutils literal notranslate"><span class="pre">RacingConfirmationLogicGroup.pending_request</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.BarrierConfirmationLogicGroup"><code class="docutils literal notranslate"><span class="pre">BarrierConfirmationLogicGroup</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.BarrierConfirmationLogicGroup.__init__"><code class="docutils literal notranslate"><span class="pre">BarrierConfirmationLogicGroup.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.logic_group.BarrierConfirmationLogicGroup.confirm"><code class="docutils literal notranslate"><span class="pre">BarrierConfirmationLogicGroup.confirm()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree.node">decision_tree.node module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.NoAction"><code class="docutils literal notranslate"><span class="pre">NoAction</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.NoAction.__init__"><code class="docutils literal notranslate"><span class="pre">NoAction.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.NoAction.eval"><code class="docutils literal notranslate"><span class="pre">NoAction.eval()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.LongAction"><code class="docutils literal notranslate"><span class="pre">LongAction</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.LongAction.__init__"><code class="docutils literal notranslate"><span class="pre">LongAction.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.LongAction.eval"><code class="docutils literal notranslate"><span class="pre">LongAction.eval()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.ShortAction"><code class="docutils literal notranslate"><span class="pre">ShortAction</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.ShortAction.__init__"><code class="docutils literal notranslate"><span class="pre">ShortAction.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.ShortAction.eval"><code class="docutils literal notranslate"><span class="pre">ShortAction.eval()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode"><code class="docutils literal notranslate"><span class="pre">RootLogicNode</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode.__init__"><code class="docutils literal notranslate"><span class="pre">RootLogicNode.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode.append"><code class="docutils literal notranslate"><span class="pre">RootLogicNode.append()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode.eval_recursively"><code class="docutils literal notranslate"><span class="pre">RootLogicNode.eval_recursively()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode.to_html"><code class="docutils literal notranslate"><span class="pre">RootLogicNode.to_html()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.RootLogicNode.child"><code class="docutils literal notranslate"><span class="pre">RootLogicNode.child</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.ContextLogicExpression"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.ContextLogicExpression.__init__"><code class="docutils literal notranslate"><span class="pre">ContextLogicExpression.__init__()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.AttrExpression"><code class="docutils literal notranslate"><span class="pre">AttrExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.AttrExpression.__init__"><code class="docutils literal notranslate"><span class="pre">AttrExpression.__init__()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.MathExpression"><code class="docutils literal notranslate"><span class="pre">MathExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.MathExpression.__init__"><code class="docutils literal notranslate"><span class="pre">MathExpression.__init__()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.ComparisonExpression"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.ComparisonExpression.__init__"><code class="docutils literal notranslate"><span class="pre">ComparisonExpression.__init__()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.node.LogicalExpression"><code class="docutils literal notranslate"><span class="pre">LogicalExpression</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="decision_tree.html#decision_tree.node.LogicalExpression.__init__"><code class="docutils literal notranslate"><span class="pre">LogicalExpression.__init__()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="decision_tree.html#module-decision_tree">Module contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="decision_tree.html#decision_tree.set_logger"><code class="docutils literal notranslate"><span class="pre">set_logger()</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="decision_graph.html#module-decision_graph">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -330,7 +112,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="apis.html" class="btn btn-neutral float-left" title="APIs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="decision_tree.html" class="btn btn-neutral float-right" title="decision_tree package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="decision_graph.html" class="btn btn-neutral float-right" title="decision_graph package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
