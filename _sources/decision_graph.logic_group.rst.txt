@@ -1,0 +1,29 @@
+decision\_graph.logic\_group package
+====================================
+
+Submodules
+----------
+
+decision\_graph.logic\_group.base module
+----------------------------------------
+
+.. automodule:: decision_graph.logic_group.base
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+decision\_graph.logic\_group.pending\_request module
+----------------------------------------------------
+
+.. automodule:: decision_graph.logic_group.pending_request
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: decision_graph.logic_group
+   :members:
+   :show-inheritance:
+   :undoc-members:

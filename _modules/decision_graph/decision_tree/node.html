@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>decision_graph.decision_tree.node &mdash; PyDecisionGraph 0.1.1 documentation</title>
+  <title>decision_graph.decision_tree.node &mdash; PyDecisionGraph 0.1.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=a58bc63e"></script>
+      <script src="../../../_static/documentation_options.js?v=92734c54"></script>
       <script src="../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -62,6 +62,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../decision_tree.html">decision_graph.decision_tree</a></li>
       <li class="breadcrumb-item active">decision_graph.decision_tree.node</li>
       <li class="wy-breadcrumbs-aside">
       </li>
@@ -86,20 +87,21 @@
 
 
 <div class="viewcode-block" id="NoAction">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.NoAction">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.NoAction">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">NoAction</span><span class="p">(</span><span class="n">ActionNode</span><span class="p">):</span>
 <div class="viewcode-block" id="NoAction.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.NoAction.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.NoAction.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">auto_connect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
-            <span class="n">action</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="nb">repr</span><span class="o">=</span><span class="s1">&#39;&lt;NoAction&gt;&#39;</span><span class="p">,</span>
             <span class="n">auto_connect</span><span class="o">=</span><span class="n">auto_connect</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="mi">0</span></div>
 
 
 <div class="viewcode-block" id="NoAction.eval">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.NoAction.eval">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.NoAction.eval">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enforce_dtype</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ActionNode</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 </div>
@@ -107,20 +109,21 @@
 
 
 <div class="viewcode-block" id="LongAction">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.LongAction">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.LongAction">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LongAction</span><span class="p">(</span><span class="n">ActionNode</span><span class="p">):</span>
 <div class="viewcode-block" id="LongAction.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.LongAction.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.LongAction.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sig</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">auto_connect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
-            <span class="n">action</span><span class="o">=</span><span class="n">sig</span><span class="p">,</span>
             <span class="nb">repr</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;&lt;LongAction&gt;(sig = </span><span class="si">{</span><span class="n">sig</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">,</span>
             <span class="n">auto_connect</span><span class="o">=</span><span class="n">auto_connect</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="n">sig</span></div>
 
 
 <div class="viewcode-block" id="LongAction.eval">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.LongAction.eval">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.LongAction.eval">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enforce_dtype</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ActionNode</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 </div>
@@ -128,20 +131,21 @@
 
 
 <div class="viewcode-block" id="ShortAction">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ShortAction">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ShortAction">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ShortAction</span><span class="p">(</span><span class="n">ActionNode</span><span class="p">):</span>
 <div class="viewcode-block" id="ShortAction.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ShortAction.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ShortAction.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sig</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">auto_connect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
-            <span class="n">action</span><span class="o">=</span><span class="n">sig</span><span class="p">,</span>
             <span class="nb">repr</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;&lt;ShortAction&gt;(sig = </span><span class="si">{</span><span class="n">sig</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">,</span>
             <span class="n">auto_connect</span><span class="o">=</span><span class="n">auto_connect</span>
-        <span class="p">)</span></div>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">sig</span> <span class="o">=</span> <span class="n">sig</span></div>
 
 
 <div class="viewcode-block" id="ShortAction.eval">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ShortAction.eval">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ShortAction.eval">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enforce_dtype</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ActionNode</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 </div>
@@ -149,10 +153,10 @@
 
 
 <div class="viewcode-block" id="RootLogicNode">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.RootLogicNode">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.RootLogicNode">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">RootLogicNode</span><span class="p">(</span><span class="n">LogicNode</span><span class="p">):</span>
 <div class="viewcode-block" id="RootLogicNode.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.RootLogicNode.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.RootLogicNode.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="n">expression</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
@@ -164,20 +168,31 @@
         <span class="k">return</span> <span class="kc">True</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_on_enter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_inspection_mode</span> <span class="o">=</span> <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span>
-        <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="n">LGM</span><span class="o">.</span><span class="n">_active_nodes</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="c1"># pre-shelve call</span>
         <span class="n">LGM</span><span class="o">.</span><span class="n">enter_expression</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
 
+        <span class="n">state</span> <span class="o">=</span> <span class="n">LGM</span><span class="o">.</span><span class="n">shelve</span><span class="p">()</span>
+
+        <span class="n">state</span><span class="p">[</span><span class="s1">&#39;inspection_mode&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span>
+
+        <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># post-shelve call</span>
+        <span class="n">LGM</span><span class="o">.</span><span class="n">_active_nodes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
     <span class="k">def</span><span class="w"> </span><span class="nf">_on_exit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># pre-unshelve call</span>
+        <span class="c1"># LGM.exit_expression(node=self)</span>
+
+        <span class="n">state</span> <span class="o">=</span> <span class="n">LGM</span><span class="o">.</span><span class="n">unshelve</span><span class="p">()</span>
+
+        <span class="c1"># post-unshelve call</span>
         <span class="n">LGM</span><span class="o">.</span><span class="n">exit_expression</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="bp">self</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_inspection_mode&#39;</span><span class="p">):</span>
-            <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inspection_mode</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="n">LGM</span><span class="o">.</span><span class="n">inspection_mode</span> <span class="o">=</span> <span class="n">state</span><span class="p">[</span><span class="s1">&#39;inspection_mode&#39;</span><span class="p">]</span>
 
 <div class="viewcode-block" id="RootLogicNode.append">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.RootLogicNode.append">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.RootLogicNode.append">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">:</span> <span class="n">Self</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">TooManyChildren</span><span class="p">()</span>
@@ -185,13 +200,13 @@
 
 
 <div class="viewcode-block" id="RootLogicNode.eval_recursively">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.RootLogicNode.eval_recursively">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.RootLogicNode.eval_recursively">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">eval_recursively</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">child</span><span class="o">.</span><span class="n">eval_recursively</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="RootLogicNode.to_html">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.RootLogicNode.to_html">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.RootLogicNode.to_html">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">to_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">with_group</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dry_run</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;decision_graph.html&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">child</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">with_group</span><span class="o">=</span><span class="n">with_group</span><span class="p">,</span> <span class="n">dry_run</span><span class="o">=</span><span class="n">dry_run</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
@@ -206,10 +221,10 @@
 
 
 <div class="viewcode-block" id="ContextLogicExpression">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ContextLogicExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ContextLogicExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ContextLogicExpression</span><span class="p">(</span><span class="n">_CLE</span><span class="p">,</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">metaclass</span><span class="o">=</span><span class="n">ABCMeta</span><span class="p">):</span>
 <div class="viewcode-block" id="ContextLogicExpression.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ContextLogicExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ContextLogicExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">bool</span> <span class="o">|</span> <span class="ne">Exception</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[[],</span> <span class="n">Any</span><span class="p">],</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logic_group</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">expression</span><span class="o">=</span><span class="n">expression</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="n">logic_group</span><span class="p">)</span>
         <span class="n">LogicNode</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="n">expression</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">)</span></div>
@@ -279,10 +294,10 @@
 
 
 <div class="viewcode-block" id="AttrExpression">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.AttrExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.AttrExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">AttrExpression</span><span class="p">(</span><span class="n">_AE</span><span class="p">,</span> <span class="n">ContextLogicExpression</span><span class="p">):</span>
 <div class="viewcode-block" id="AttrExpression.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.AttrExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.AttrExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">int</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logic_group</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">attr</span><span class="o">=</span><span class="n">attr</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="n">logic_group</span><span class="p">)</span>
         <span class="n">ContextLogicExpression</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_eval</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logic_group</span><span class="p">)</span></div>
@@ -291,10 +306,10 @@
 
 
 <div class="viewcode-block" id="MathExpression">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.MathExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.MathExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">MathExpression</span><span class="p">(</span><span class="n">_ME</span><span class="p">,</span> <span class="n">ContextLogicExpression</span><span class="p">):</span>
 <div class="viewcode-block" id="MathExpression.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.MathExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.MathExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">left</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span> <span class="n">op</span><span class="p">:</span> <span class="n">_ME</span><span class="o">.</span><span class="n">Operator</span><span class="p">,</span> <span class="n">right</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logic_group</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">left</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">op</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="n">logic_group</span><span class="p">)</span>
         <span class="n">ContextLogicExpression</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_eval</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logic_group</span><span class="p">)</span></div>
@@ -303,10 +318,10 @@
 
 
 <div class="viewcode-block" id="ComparisonExpression">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ComparisonExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ComparisonExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ComparisonExpression</span><span class="p">(</span><span class="n">_CE</span><span class="p">,</span> <span class="n">ContextLogicExpression</span><span class="p">):</span>
 <div class="viewcode-block" id="ComparisonExpression.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.ComparisonExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.ComparisonExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">left</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span> <span class="n">op</span><span class="p">:</span> <span class="n">_CE</span><span class="o">.</span><span class="n">Operator</span><span class="p">,</span> <span class="n">right</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logic_group</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">left</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">op</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="n">logic_group</span><span class="p">)</span>
         <span class="n">ContextLogicExpression</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_eval</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logic_group</span><span class="p">)</span></div>
@@ -315,10 +330,10 @@
 
 
 <div class="viewcode-block" id="LogicalExpression">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.LogicalExpression">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.LogicalExpression">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LogicalExpression</span><span class="p">(</span><span class="n">_LE</span><span class="p">,</span> <span class="n">ContextLogicExpression</span><span class="p">):</span>
 <div class="viewcode-block" id="LogicalExpression.__init__">
-<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.collection.LogicalExpression.__init__">[docs]</a>
+<a class="viewcode-back" href="../../../decision_tree.html#decision_graph.decision_tree.node.LogicalExpression.__init__">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">left</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span> <span class="n">op</span><span class="p">:</span> <span class="n">_LE</span><span class="o">.</span><span class="n">Operator</span><span class="p">,</span> <span class="n">right</span><span class="p">:</span> <span class="n">ContextLogicExpression</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">type</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">repr</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">logic_group</span><span class="p">:</span> <span class="n">LogicGroup</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">edge_condition</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="n">left</span><span class="p">,</span> <span class="n">op</span><span class="o">=</span><span class="n">op</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="nb">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="n">logic_group</span><span class="p">)</span>
         <span class="n">ContextLogicExpression</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="o">=</span><span class="bp">self</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_eval</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">repr</span><span class="p">,</span> <span class="n">logic_group</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logic_group</span><span class="p">)</span></div>

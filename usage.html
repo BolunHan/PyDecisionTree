@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usage &mdash; PyDecisionGraph 0.1.1 documentation</title>
+  <title>Usage &mdash; PyDecisionGraph 0.1.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=a58bc63e"></script>
+      <script src="_static/documentation_options.js?v=92734c54"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -77,7 +77,7 @@
   <section id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
 <p>Here is a quick demo on how to use <cite>PyDecisionGraph</cite> for building a decision tree based on various conditions:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">decision_graph</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">LOGGER</span><span class="p">,</span> <span class="n">AttrExpression</span><span class="p">,</span> <span class="n">LongAction</span><span class="p">,</span> <span class="n">ShortAction</span><span class="p">,</span> <span class="n">NoAction</span><span class="p">,</span> <span class="n">RootLogicNode</span><span class="p">,</span> <span class="n">LogicMapping</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">decision_graph.decision_tree</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogicNode</span><span class="p">,</span> <span class="n">LOGGER</span><span class="p">,</span> <span class="n">AttrExpression</span><span class="p">,</span> <span class="n">LongAction</span><span class="p">,</span> <span class="n">ShortAction</span><span class="p">,</span> <span class="n">NoAction</span><span class="p">,</span> <span class="n">RootLogicNode</span><span class="p">,</span> <span class="n">LogicMapping</span>
 
 <span class="c1"># Mapping of attribute names to their values</span>
 <span class="n">LogicMapping</span><span class="o">.</span><span class="n">AttrExpression</span> <span class="o">=</span> <span class="n">AttrExpression</span>

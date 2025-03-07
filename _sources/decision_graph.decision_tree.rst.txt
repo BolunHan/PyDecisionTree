@@ -36,14 +36,6 @@ decision\_graph.decision\_tree.expression module
    :show-inheritance:
    :undoc-members:
 
-decision\_graph.decision\_tree.logic\_group module
---------------------------------------------------
-
-.. automodule:: decision_graph.decision_tree.logic_group
-   :members:
-   :show-inheritance:
-   :undoc-members:
-
 decision\_graph.decision\_tree.node module
 ------------------------------------------
 

@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>decision_graph.logic_group package &mdash; PyDecisionGraph 0.1.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=92734c54"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyDecisionGraph
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apis.html">APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery.html">Gallery</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyDecisionGraph</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">decision_graph.logic_group package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/decision_graph.logic_group.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="decision-graph-logic-group-package">
+<h1>decision_graph.logic_group package<a class="headerlink" href="#decision-graph-logic-group-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-decision_graph.logic_group.base">
+<span id="decision-graph-logic-group-base-module"></span><h2>decision_graph.logic_group.base module<a class="headerlink" href="#module-decision_graph.logic_group.base" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.SignalLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.base.</span></span><span class="sig-name descname"><span class="pre">SignalLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.SignalLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.SignalLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contexts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.SignalLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.SignalLogicGroup.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.SignalLogicGroup.get" title="Link to this definition"></a></dt>
+<dd><p>Retrieve an attribute as a LogicExpression.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.SignalLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.SignalLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.SignalLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.base.SignalLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.InstantConfirmationLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.base.</span></span><span class="sig-name descname"><span class="pre">InstantConfirmationLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.InstantConfirmationLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">SignalLogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.InstantConfirmationLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><span class="pre">SignalLogicGroup</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.InstantConfirmationLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.InstantConfirmationLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.InstantConfirmationLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.InstantConfirmationLogicGroup.confirm">
+<span class="sig-name descname"><span class="pre">confirm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.node.LongAction" title="decision_graph.decision_tree.node.LongAction"><span class="pre">LongAction</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.confirm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.base.InstantConfirmationLogicGroup.confirm" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">confirm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.node.ShortAction" title="decision_graph.decision_tree.node.ShortAction"><span class="pre">ShortAction</span></a></span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.base.InstantConfirmationLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.base.InstantConfirmationLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-decision_graph.logic_group.pending_request">
+<span id="decision-graph-logic-group-pending-request-module"></span><h2>decision_graph.logic_group.pending_request module<a class="headerlink" href="#module-decision_graph.logic_group.pending_request" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestAction">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">RequestAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestAction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestAction" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StrEnum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestAction.open">
+<span class="sig-name descname"><span class="pre">open</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'open'</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestAction.open" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestAction.unwind">
+<span class="sig-name descname"><span class="pre">unwind</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'unwind'</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestAction.unwind" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestAction.idle">
+<span class="sig-name descname"><span class="pre">idle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'idle'</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestAction.idle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">PendingRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logic_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><span class="pre">LogicGroup</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UUID</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logic_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><span class="pre">LogicGroup</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UUID</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.empty">
+<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.empty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.empty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.timestamp">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timestamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.timestamp" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.sig">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sig</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.sig" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.timeout">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timeout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.timeout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.action">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.action" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.PendingRequest.uid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">uid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">UUID</span></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.PendingRequest.uid" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestConfirmed">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">RequestConfirmed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestConfirmed" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestConfirmed.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestConfirmed.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestConfirmed.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestConfirmed.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestDenied">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">RequestDenied</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestDenied" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestDenied.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestDenied.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestDenied.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestDenied.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestRegistered">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">RequestRegistered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestRegistered" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestRegistered.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestRegistered.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.RequestRegistered.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.RequestRegistered.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.pending_request.</span></span><span class="sig-name descname"><span class="pre">DelayedConfirmationLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">SignalLogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><span class="pre">SignalLogicGroup</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.register">
+<span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestRegistered" title="decision_graph.logic_group.pending_request.RequestRegistered"><span class="pre">RequestRegistered</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.register" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.confirm">
+<span class="sig-name descname"><span class="pre">confirm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestConfirmed" title="decision_graph.logic_group.pending_request.RequestConfirmed"><span class="pre">RequestConfirmed</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.confirm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.confirm" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.deny">
+<span class="sig-name descname"><span class="pre">deny</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestDenied" title="decision_graph.logic_group.pending_request.RequestDenied"><span class="pre">RequestDenied</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.deny"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.deny" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.action">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.action" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.pending_request">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pending_request</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></em><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.pending_request" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.pending_request.DelayedConfirmationLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-decision_graph.logic_group">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-decision_graph.logic_group" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.SignalLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">SignalLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.SignalLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.SignalLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Self</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contexts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.SignalLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.SignalLogicGroup.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">repr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.SignalLogicGroup.get" title="Link to this definition"></a></dt>
+<dd><p>Retrieve an attribute as a LogicExpression.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.SignalLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#SignalLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.SignalLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.SignalLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.SignalLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.InstantConfirmationLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">InstantConfirmationLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.InstantConfirmationLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">SignalLogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.InstantConfirmationLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><span class="pre">SignalLogicGroup</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.InstantConfirmationLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.InstantConfirmationLogicGroup.confirm">
+<span class="sig-name descname"><span class="pre">confirm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.confirm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.InstantConfirmationLogicGroup.confirm" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.InstantConfirmationLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/base.html#InstantConfirmationLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.InstantConfirmationLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.InstantConfirmationLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.InstantConfirmationLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestAction">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">RequestAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestAction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestAction" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">StrEnum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestAction.open">
+<span class="sig-name descname"><span class="pre">open</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'open'</span></em><a class="headerlink" href="#decision_graph.logic_group.RequestAction.open" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestAction.unwind">
+<span class="sig-name descname"><span class="pre">unwind</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'unwind'</span></em><a class="headerlink" href="#decision_graph.logic_group.RequestAction.unwind" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestAction.idle">
+<span class="sig-name descname"><span class="pre">idle</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'idle'</span></em><a class="headerlink" href="#decision_graph.logic_group.RequestAction.idle" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">PendingRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logic_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><span class="pre">LogicGroup</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UUID</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.PendingRequest" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logic_group</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.LogicGroup" title="decision_graph.decision_tree.abc.LogicGroup"><span class="pre">LogicGroup</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UUID</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.action">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.action" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.empty">
+<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.empty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.empty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.name">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#PendingRequest.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.sig">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sig</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.sig" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.timeout">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timeout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.timeout" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.timestamp">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timestamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.timestamp" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.PendingRequest.uid">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">uid</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">UUID</span></em><a class="headerlink" href="#decision_graph.logic_group.PendingRequest.uid" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestConfirmed">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">RequestConfirmed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestConfirmed" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestConfirmed.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestConfirmed.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestConfirmed.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestConfirmed.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestConfirmed.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestDenied">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">RequestDenied</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestDenied" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestDenied.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestDenied.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestDenied.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestDenied.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestDenied.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestRegistered">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">RequestRegistered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestRegistered" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionNode</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestRegistered.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">req</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.PendingRequest" title="decision_graph.logic_group.pending_request.PendingRequest"><span class="pre">PendingRequest</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_connect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestRegistered.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initialize the LogicExpression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>Union</em><em>[</em><em>Any</em><em>, </em><em>Callable</em><em>[</em><em>[</em><em>]</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – The action to execute.</p></li>
+<li><p><strong>repr</strong> (<em>str</em><em>, </em><em>optional</em>) – A string representation of the expression.</p></li>
+<li><p><strong>auto_connect</strong> – auto-connect to the current active decision graph.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.RequestRegistered.eval">
+<span class="sig-name descname"><span class="pre">eval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enforce_dtype</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.abc.ActionNode" title="decision_graph.decision_tree.abc.ActionNode"><span class="pre">ActionNode</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#RequestRegistered.eval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.RequestRegistered.eval" title="Link to this definition"></a></dt>
+<dd><p>Evaluate the expression.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decision_graph.logic_group.</span></span><span class="sig-name descname"><span class="pre">DelayedConfirmationLogicGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">SignalLogicGroup</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.base.SignalLogicGroup" title="decision_graph.logic_group.base.SignalLogicGroup"><span class="pre">SignalLogicGroup</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.action">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a></em><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.action" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.confirm">
+<span class="sig-name descname"><span class="pre">confirm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestConfirmed" title="decision_graph.logic_group.pending_request.RequestConfirmed"><span class="pre">RequestConfirmed</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.confirm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.confirm" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.deny">
+<span class="sig-name descname"><span class="pre">deny</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestDenied" title="decision_graph.logic_group.pending_request.RequestDenied"><span class="pre">RequestDenied</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.deny"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.deny" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.pending_request">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pending_request</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></em><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.pending_request" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.register">
+<span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">StateMapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Mapping</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="decision_tree.html#decision_graph.decision_tree.collection.LogicMapping" title="decision_graph.decision_tree.collection.LogicMapping"><span class="pre">LogicMapping</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">inf</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestAction" title="decision_graph.logic_group.pending_request.RequestAction"><span class="pre">RequestAction</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">RequestAction.open</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#decision_graph.logic_group.pending_request.RequestRegistered" title="decision_graph.logic_group.pending_request.RequestRegistered"><span class="pre">RequestRegistered</span></a></span></span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.register" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/decision_graph/logic_group/pending_request.html#DelayedConfirmationLogicGroup.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.reset" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="decision_graph.logic_group.DelayedConfirmationLogicGroup.signal">
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal</span></span><a class="headerlink" href="#decision_graph.logic_group.DelayedConfirmationLogicGroup.signal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
